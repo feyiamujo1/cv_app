@@ -1,0 +1,11 @@
+{
+  "short_name": "Resume Builder",
+  "name": "Obafemi Awolowo University Resume Builder",
+  "icons": [
+    
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
