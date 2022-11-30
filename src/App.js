@@ -1,22 +1,23 @@
-import Navbar from "./Components/Navbar/Navbar";
+import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Resumedetails from "./Components/Resumedetails";
+import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+import Cvdetails from "./Components/Cvdetails";
+import Errorpage from "./Components/Errorpage";
+import CvReview from "./Components/CvReview";
+// import { Children } from "react";
+// import Personaldata from "./Components/Personaldata";
+
+const router = createBrowserRouter([
+  {path: "/", element: <Home />, errorElement:<Errorpage />},
+  {path: "/createcv", element: <Cvdetails />}, 
+  {path: "/reviewcv", element: <CvReview />}]);
+  
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Navbar/>
-        <Routes>
-          <Route path='/' element = {<Home/>}/>
-          {/* <Route path='/buildresume' element={<Resumedetails/>}/> */}
-          {/* <Route path='/product' element={<Product/>}/>
-          <Route path='/contact' element={<Contact/>}/> */}
-        </Routes>
-        {/* <Footer/> */}
-      </Router>
-      <Home/>
+      <Navbar/>
+      <RouterProvider router={router} />
     </div>
   );
 }

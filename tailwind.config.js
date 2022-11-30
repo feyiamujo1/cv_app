@@ -10,7 +10,8 @@ module.exports = {
       colors: {
         'custom-dark-blue': '#3e4095',
         'custom-brown': '#333333',
-        'custom-blue': '#3d3a8b'
+        'custom-blue': '#3d3a8b',
+        'custom-yellow': '#caa159'
       },
       backgroundImage:{
         'hero-image':'linear-gradient(rgba(0,0,0, 0.7),rgba(0,0,0, 0.7)), url("../src/assets/images/markus-winkler-XKKuY4ottJ0-unsplash.jpg")',
