@@ -53,7 +53,8 @@ function Cvdetails() {
     if (currentStepIndex>1){
       setCurrentStepIndex(currentStepIndex=>currentStepIndex-1);
     }else{
-      navigate('/reviewcv')
+      //navigate('/reviewcv')
+      navigate('/')
     }
   }
 
