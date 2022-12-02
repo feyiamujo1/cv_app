@@ -7,44 +7,6 @@ import MultistepProgressbar from './MultistepProgressbar'
 import Personaldata from './Personaldata'
 import Personaldatacontd from './Personaldatacontd'
 
-const INITIAL_DATA = {
-  firstname: '',
-  othername: '',
-  date_of_birth: '',
-  contact_residential_address: '',
-  contact_email: '',
-  contact_phone: '',
-  nationality: '',
-  state_of_origin: '',
-  senitorial_district: '',
-  lga: '',
-  permanent_home_address: '',
-  marital_status: '',
-  kins_contact_residential_address: '',
-  kins_contact_email: '',
-  kins_contact_phone: '',
-  assumption_of_duty_date: '',
-  first_appointment_rank: '',
-  present_status: '',
-  present_salary_grade_level_step: '',
-  last_promotion_date: '',
-  appointment_confirmation_date: '',
-  Faculty_or_Directorate: '',
-  department_or_unit: '',
-  school_of_study: '',
-  school_of_study_city: '',
-  school_of_study_state: '',
-  school_degree: '',
-  field_of_Study: '',
-  school_start_year: '',
-  school_end_year: '',
-  scholarship: '',
-  fellowship: '',
-  research_grant: '',
-  national_award: '',
-  international_award: ''
-}
-
 function Cvdetails() {
   const navigate = useNavigate();
   const [currentStepIndex, setCurrentStepIndex] = useState(1);
